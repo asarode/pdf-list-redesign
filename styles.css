@@ -1,5 +1,6 @@
 body {
 	font-family: 'Open Sans', sans-serif;
+
 }
 
 h1 {
@@ -47,7 +48,6 @@ section {
 	padding-right: 45px;
 	color: #333;
 	transition: all 250ms ease;
-	
 }
 
 .list-book li a:first-child:hover {
@@ -61,7 +61,7 @@ section {
 	color: #777;
 }
 
-.list-book .button-preview {
+.button-preview {
 	/*margin-left: 15px;*/
 	display: inline-block;
 	position: absolute;
@@ -73,7 +73,7 @@ section {
 
 }
 
-.list-book .button-preview:hover {
+.button-preview:hover {
 	color: #333;
 	transition: all 250ms ease;
 }
@@ -82,4 +82,34 @@ section {
 	width: 420px;
 	position: fixed;
 	top: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+	.img-preview {
+		width: 220px;
+	}
+
+	.list-book li {
+		width: 340px;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.button-preview {
+		display: none;
+	}
+
+	.img-preview {
+		display: none !important;
+	}
+
+	.list-book li {
+		display: block;
+		width: 100%;
+	}
+
+	body {
+		padding: 0 30px;
+	}
+
 }

@@ -1,0 +1,85 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	font-weight: 300;
+
+}
+
+section {
+	margin-bottom: 45px;
+}
+
+.list-book {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+	font-size: 16px;
+}
+
+.list-book li {
+	float: left;
+	clear: left;
+	width: 420px;
+	border-radius: 4px;
+	transition: all 250ms ease;
+	text-decoration: none;
+	position: relative;
+	margin-bottom: 4px;
+	border: 1px solid rgba(0,0,0,0);
+
+}
+
+.list-book li:hover {
+	background-color: #fffdf5;
+	border-color: #fafafa;
+	transition: all 250ms ease;
+}
+
+.list-book li:hover a:first-child {
+	padding-left: 15px;
+}
+
+.list-book li a:first-child {
+	display: block;
+	padding: 8px 0 8px 0px;
+	padding-right: 45px;
+	color: #333;
+	transition: all 250ms ease;
+	
+}
+
+.list-book li a:first-child:hover {
+	padding-left: 15px;
+	color: #333;
+	text-decoration: none;
+	transition: all 250ms ease;
+}
+
+.list-book li a:first-child:visited {
+	color: #777;
+}
+
+.list-book .button-preview {
+	/*margin-left: 15px;*/
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+	top: 1px;
+	color: #aaa;
+	padding: 8px 15px;
+	transition: all 250ms ease;
+
+}
+
+.list-book .button-preview:hover {
+	color: #333;
+	transition: all 250ms ease;
+}
+
+.img-preview {
+	width: 420px;
+	position: fixed;
+	top: 30px;
+}
